@@ -172,6 +172,12 @@ a:hover {
   color: var(--pink);
 }
 
+.coin-details-title {
+  color: var(--text-primary) !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em;
+}
+
 .coin-details-heading {
   font-weight: 700 !important;
   margin-top: 20px !important;

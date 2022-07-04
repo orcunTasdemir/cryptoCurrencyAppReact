@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
+import { CopyrightOutlined } from "@ant-design/icons";
 import {
   Navbar,
   Exchanges,
@@ -24,9 +25,9 @@ const App = () => {
               <Route exact path="/">
                 <Homepage />
               </Route>
-              <Route exact path="/exchanges">
+              {/* <Route exact path="/exchanges">
                 <Exchanges />
-              </Route>
+              </Route> */}
               <Route exact path="/cryptocurrencies">
                 <Cryptocurrencies />
               </Route>
@@ -43,11 +44,12 @@ const App = () => {
         <div className="footer">
           <Typography.Title level={5} style={{ color: "white  " }}>
             Cryptoverse <br />
-            All rights reserved
+            <CopyrightOutlined />
+            <small> All rights reserved</small>
           </Typography.Title>
           <Space>
             <Link to="/">Home</Link>
-            <Link to="/exchanges">Exchanges</Link>
+            {/* <Link to="/exchanges">Exchanges</Link> */}
             <Link to="/news">News</Link>
           </Space>
         </div>

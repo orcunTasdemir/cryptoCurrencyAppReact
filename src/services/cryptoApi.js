@@ -20,9 +20,10 @@ export const cryptoApi = createApi({
     getCryptoDetails: builder.query({
       query: (coinId) => createRequest(`coin/${coinId}`),
     }),
+
     getCryptoHistory: builder.query({
-      query: ({ coinId, timeperiod }) =>
-        createRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`),
+      query: ({ coinId, timePeriod }) =>
+        createRequest(`coin/${coinId}/history?timePeriod=${timePeriod}`),
     }),
 
     // Note: To access this endpoint you need premium plan
